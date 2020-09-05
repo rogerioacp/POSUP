@@ -3,8 +3,8 @@
 #set -x
 #create database structure
 
-IDX_NUM_BLOCKS=100
-FILE_NUM_BLOCKS=32
+IDX_NUM_BLOCKS=7
+FILE_NUM_BLOCKS=11
 
 DB_PATH="data"
 
@@ -30,3 +30,4 @@ create_server "$DB_PATH/server/idx" $IDX_NUM_BLOCKS
 
 mkdir -p "$DB_PATH/fileBlock"
 mkdir -p "$DB_PATH/idxBlock"
+mkdir -p "$DB_PATH/client"
