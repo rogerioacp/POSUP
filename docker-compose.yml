@@ -1,0 +1,11 @@
+version: '3'
+services:
+  posup:
+    image: posup
+    volumes:
+      - .:/opt/intel/sgxsdk/SampleCode/SampleEnclave
+    stdin_open: true
+    tty: true
+    environment:
+      - SGX_SDK=/opt/intel/sgxsdk
+    command: bash
