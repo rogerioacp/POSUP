@@ -2,7 +2,7 @@
 const string PEER_ADDRESS = "tcp://127.0.0.1:5555";
 
 //=== PATHS ==================================================================
-const std::string rootPath = "C:/data/";
+const std::string rootPath = "/opt/intel/sgxsdk/SampleCode/SampleEnclave/data/";
 
 //const std::string clientLocalDir = rootPath + "client_local/";
 const std::string clientDataDir = rootPath + "client/";

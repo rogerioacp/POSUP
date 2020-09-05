@@ -753,7 +753,7 @@ int TreeORAM::writeCurrentState_to_file( ORAM_INFO* oram_info)
 int TreeORAM::readCurrentState_from_file(ORAM_INFO* oram_info)
 {
 	string path(oram_info[0].ORAMPath);
-	path += +"/State";
+	path += +"State";
 	FILE* file_in = NULL;
 	file_in = fopen(path.c_str(), "rb");
 	for (int i = 0; i < oram_info[0].N_LEVELS; i++)

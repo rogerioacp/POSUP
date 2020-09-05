@@ -6,7 +6,7 @@
 #include "sgx_eid.h"
 #include "sgx_tcrypto.h"
 #include "sgx_trts.h"
-#include "sgx_tae_service.h"
+//#include "sgx_tae_service.h"
 typedef int TYPE_ID;
 typedef struct type_pos_map
 {
@@ -46,7 +46,7 @@ typedef struct type_pos_map
 #define INDEX_DATA_SIZE  1012 //64 //byte
 #define FILE_DATA_SIZE 3060 //512 //byte
 
-#define IDX_NUM_BLOCKS 512 //16777216//2048//16777216
+#define IDX_NUM_BLOCKS 100 //16777216//2048//16777216
 #define FILE_NUM_BLOCKS 32 //8388608//128//8388608
 
 #define NUMBLOCK_PATH_LOAD BUCKET_SIZE

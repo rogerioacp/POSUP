@@ -57,24 +57,26 @@ int main(int argc, char **argv)
 			p->loadState();
 			break;
 		case 2:
-			//cout << "Keyword search: ";
-			//cin >> str_keyword;
-			//std::transform(str_keyword.begin(), str_keyword.end(), str_keyword.begin(), ::tolower);
+			cout << "Keyword search: ";
+			cin >> str_keyword;
+			std::transform(str_keyword.begin(), str_keyword.end(), str_keyword.begin(), ::tolower);
 			p->loadState();
-			str_keyword = "the";
+			//str_keyword = "the";
 			p->search(str_keyword, search_result);
 			p->saveState();
 			cout << " Keyword *" << str_keyword << "* appeared in " << search_result << " files" << endl;
 			break;
 		case 3:
-			//cout << "Keyword to be updated: ";
-			//cin >> str_keyword;
-			//std::transform(str_keyword.begin(), str_keyword.end(), str_keyword.begin(), ::tolower);
-			//cout << "File ID to be added (positive) or deleted (negative): ";
-			//cin >> fID;
+			cout << "Keyword to be updated: ";
+			cin >> str_keyword;
+			std::transform(str_keyword.begin(), str_keyword.end(), str_keyword.begin(), ::tolower);
+			cout << "File ID to be added (positive) or deleted (negative): ";
+			cin >> fID;
+			cout << "Going to load state" << endl;
 			p->loadState();
-			str_keyword = "the";
-			fID = -2;
+			/*str_keyword = "the";
+			fID = -2;*/
+			cout << "Update keyword " << str_keyword << " for file " << fID << endl;
 			p->update(str_keyword, fID);
 			p->saveState();
 			break;
